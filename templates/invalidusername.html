@@ -1,0 +1,12 @@
+<!doctype html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <h1>The username you entered is taken!</h1>
+        <a class="registerBtn"href = "{{url_for('register') }}">Go Back</a>  
+    </div>
+</body>

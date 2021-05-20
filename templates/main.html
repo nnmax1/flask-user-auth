@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <header>
+      <h1 class="logo">Main</h1>
+     </header>
+    <div class="container"> 
+
+    </div>
+
+    <footer>
+      <p class="userLoggedIn">Logged in as: <strong>{{ current_user.username }}</strong></p>
+ 
+      <a class="logoutBtn" href="{{ url_for('logout')}}">Logout</a>
+    </footer>
+</body>
+</html>
+
+
+
+
+
